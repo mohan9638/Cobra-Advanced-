@@ -1,0 +1,40 @@
+
+{
+    "name": "anonymous",
+    "description": "anonymous",
+    "repository": "https://github.com/",
+    "keywords": [
+        "telegram bot",
+        "pyrogram"
+    ],
+    "env": {
+        "API_ID":{
+            "description": "Get your telegram API ID from https://my.telegram.org",
+            "value":"25693368"
+        },
+        "API_HASH":{
+            "description":"Get your telegram API HASH from https://my.telegram.org",
+		    "value":"2dcf91b0f99c0b9d4875e87020e6bd07"
+        },
+        "BOT_TOKEN":{
+            "description":"Get from BotFather",
+            "value":"8168375419:AAFPKeq2DbyauFgCFX0y2wZ0vUposlws7DA"
+        },
+        "AUTH_USERS":{
+            "description":"Admin/Owner/Friends ID Seperate by ','  Ex: 44578878,8878899",
+             "value":"5917152380"
+       
+	}
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+	  "url": "heroku/python"
+          "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+	 "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview"
+	}
+
+	    
+    }
+
+}
